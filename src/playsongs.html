@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/de71e220d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <!-- responsive navigation -->
+             <div class = "navigation-dropdown-menu">
+                <div class="navigation-dropdown">
+                    <i class="fas fa-bars nav-bar"></i>
+                    <div class="navigation-dropdown-content">
+                        <a class="active" href="../index.html"><i class="fas fa-home"></i>Home</a>
+                        <a href="#mymusic"><i class="fas fa-music"></i>My Music</a>
+                        <a href="#browse"><i class="fab fa-edge"></i>Browse</a>
+                        <a href="#favourite"><i class="fas fa-heart"></i>Favourites</a>
+                        <a href="#recent"><i class="fas fa-clipboard"></i>Recent</a>
+                    </div>
+                  </div>
+                <!-- Responsive Search Bar -->
+                    <div class="search-bar">
+                        <ul class="list-style-none">
+                            <li><input type="text" placeholder="Search..." ></li>
+                            <li><span class="search-icon"><i class="fas fa-search"></i></span></li>
+                            <li><span class="microphone-icon"> <i class="fas fa-microphone"></i></span></li>
+                            <li><span class="notification-icon"><i class="fas fa-bell"></i></span></li>
+                            <li><span class="login-icon"><img src="../assets/images/personal.jpg" alt=""></span></li>
+                        </ul>
+                    </div>
+            </div>
+            <!-- Navigation  -->
+            <div class="navigation">
+                <ul>
+                    <li><a href="../index.html" id="img"> <img src="../assets/images/international.jpg" alt="logo"></a></li>
+                    <li><a class="active" href="../index.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="#mymusic">My Music</a></li>
+                    <li><a href="#browse">Browse</a></li>
+                    <li><a href="#favourite">Favourites</a></li>
+                    <li><a href="#recent">Recent</a></li>
+                    <li><input type="text" placeholder="Search..." ></li>
+                    <li><span class="search-icon"><i class="fas fa-search"></i></span></li>
+                    <li><span class="microphone-icon"> <i class="fas fa-microphone"></i></span></li>
+                    <li><span class="notification-icon"><i class="fas fa-bell"></i></span></li>
+                    <li><span class="login-icon"><img src="../assets/images/personal.jpg" alt=""></span></li>
+                </ul>
+           </div>
+        </nav>
+    </header>
+
+
+
+    <!-- This is the Artist Section Of this Page  -->
+    <main id="hide-scroll">
+        <section class="artists-section">
+            <div class="artist flex">
+                <div class="artist-preview">
+                    <a href="#"><img src="../assets/images/coldplay.png" alt=""></a>
+                </div>
+                <div class="artist-info">
+                    <div class="progress-container">
+                        <span class="followers">
+                            <h5>851 Followers</h5>
+                        </span>
+                    </div>
+                    <h2>ColdPlay</h2>
+                    <h5>British Band</h5><br>
+                    <h5>Coldplay are a British rock band that was formed in London in 1996.[1][2] Vocalist and pianist Chris Martin, guitarist Jonny Buckland, bassist Guy Berryman, and drummer Will Champion met at University College London and began playing music together from 1996 to 1998, first calling themselves Pectoralz and then Starfish before finally changing their name to Coldplay.</h5>
+                    <button class="btn">Play All</button>
+                    <h5>247 Tracks | 128 Albums</h5>
+                    <div class="progress-container">
+                        <span class="follow">
+                            <h5>Follow</h5>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artist Songs Play List -->
+        <section class="artist-playlist" >
+            <table >
+                <tbody>
+                    <tr>
+                        <th> # </th> 
+                        <th>TITLE </th> 
+                        <th>Artist </th>
+                        <th></th> 
+                        <th></th>
+                    </tr>
+                <tr >
+                    <td rowspan="2">
+                        <span>01</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                    <td rowspan="2" id="plus-icon" >
+                        <i class="fas fa-plus"></i>
+                    </td>
+                </tr>
+                   <!-- <tr> -->
+                     <td>Else</td>
+                   <!-- </tr> -->
+                   <tr>
+                    <td rowspan="2">
+                        <span>02</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                    <td rowspan="2" id="plus-icon" >
+                        <i class="fas fa-plus"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>03</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                    <td rowspan="2" id="plus-icon" >
+                        <i class="fas fa-plus"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>04</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                    <td rowspan="2" id="plus-icon" >
+                        <i class="fas fa-plus"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>05</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                    <td rowspan="2" id="plus-icon" >
+                        <i class="fas fa-plus"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>06</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                    <td rowspan="2" id="plus-icon" >
+                        <i class="fas fa-plus"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>07</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                    <td rowspan="2" id="plus-icon" >
+                        <i class="fas fa-plus"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>08</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                    <td rowspan="2" id="plus-icon" >
+                        <i class="fas fa-plus"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>09</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                    <td rowspan="2" id="plus-icon" >
+                        <i class="fas fa-plus"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>10</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                    <td rowspan="2" id="plus-icon" >
+                        <i class="fas fa-plus"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>11</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                    <td rowspan="2" id="plus-icon" >
+                        <i class="fas fa-plus"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>11</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                    <td rowspan="2" id="plus-icon" >
+                        <i class="fas fa-plus"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+                   <tr>
+                    <td rowspan="2">
+                        <span>11</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                    <td rowspan="2" id="plus-icon" >
+                        <i class="fas fa-plus"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+                   <tr>
+                    <td rowspan="2">
+                        <span>11</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                    <td rowspan="2" id="plus-icon" >
+                        <i class="fas fa-plus"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+                   <tr>
+                    <td rowspan="2">
+                        <span>11</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                    <td rowspan="2" id="plus-icon" >
+                        <i class="fas fa-plus"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+    
+            </tbody>
+            </table>
+
+        </section>
+    </main>
+
+
+    <aside id="hide-scroll" style="margin-right: 50px;">
+        <section id="playlist">
+            <div class="queue-dropdown">
+                <h1>Similar Artists</h1>
+                <div class="dropdown">
+                    <button  class="dropbtn"> View All</button>
+                    <div class="dropdown-content">
+                        <a href="#"><i class="fas fa-list-alt"></i>Playlists</a>
+                        <a href="#"><i class="far fa-heart"></i>Favourie Songs</a>
+                        <a href="#"><i class="fas fa-share-alt"></i>Share</a>
+                        <a href="#"><i class="fas fa-info-circle"></i>Get Playlist info</a>
+                    </div>
+                </div>
+            </div>
+            <table >
+                
+                <tr>
+                    <td rowspan="2">
+                        <span>01</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>02</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>03</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>04</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>05</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>06</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>07</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>08</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>09</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>10</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>11</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+    
+            </table>
+        </section>
+
+
+
+
+        <section id="playlist">
+            <div class="queue-dropdown">
+                <h1>Similar Artists</h1>
+                <div class="dropdown">
+                    <button  class="dropbtn"> View All</button>
+                    <div class="dropdown-content">
+                        <a href="#"><i class="fas fa-list-alt"></i>Playlists</a>
+                        <a href="#"><i class="far fa-heart"></i>Favourie Songs</a>
+                        <a href="#"><i class="fas fa-share-alt"></i>Share</a>
+                        <a href="#"><i class="fas fa-info-circle"></i>Get Playlist info</a>
+                    </div>
+                </div>
+            </div>
+            <table >
+                
+                <tr>
+                    <td rowspan="2">
+                        <span>01</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>02</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>03</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>04</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>05</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>06</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>07</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>08</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>09</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>10</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+
+                   <tr>
+                    <td rowspan="2">
+                        <span>11</span>
+                     </td>
+                     <td rowspan="2">
+                         <img src="../assets/images/arijit.jpg" alt="">
+                    </td>
+                     <td>Mirage</td>
+                    <td rowspan="2" id="favourite-icon" >
+                        <i class="far fa-heart"></i>
+                    </td>
+                </tr>
+                   <tr>
+                     <td>Else</td>
+                   </tr>
+    
+            </table>
+        </section>
+        
+         
+    </aside>
+     <!-- This is the footer section for Bottom Music player -->
+    <footer>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/ogg">
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg">
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/wav">
+                    Your browser does not support the audio element.
+            </audio>
+            <div class="audio-block flex">
+                <div class="audio-block-image">
+                  <a href=""><img src="../assets/images/international.jpg" alt=""></a>
+                  <div>
+                    <h5>Imagine By John Lennon</h5>
+                    <h6>John Lennon</h6>
+                </div>
+                <a href=""><span><i class="far fa-heart"></i></span></a>
+                <a href=""><span><i class="fas fa-ban"></i></span></a>
+                </div>
+                
+                <div class="audio-control-block flex">
+                    
+                    <div class="player-progress">
+                        <div class="progress"></div>
+                        <div class="progress-indicator"></div>
+                        <span class="progress-time">1:39</span>
+                        <span class="progress-time" style="left: 95%;">4:44</span>
+                    </div>
+                   
+                    <div class="player-icon">
+                        <a href=""><span><i class="fas fa-random"></i></span></a>
+                        <a href=""><span><i class="fas fa-step-backward"></i></span></a>
+                        <a href=""><span><i class="far fa-pause-circle" style="font-size: 25px;"></i></span></a>
+                        <a href=""><span><i class="fas fa-step-forward"></i></span></a>
+                        <a href=""><span><i class="fas fa-exchange-alt"></i></span></a>
+                    </div>
+            
+            
+                    <div class="volume-progress">
+                        <div class="progress"></div>
+                        <div class="progress-indicator" style="left: 90px;"></div>
+                        <div class="volume-icon">
+                            <a href=""><span><i class="fab fa-playstation"></i></span></a>
+                            <a href=""><span><i class="fas fa-volume-up"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+
+    </footer>
+</body>
+</html>
